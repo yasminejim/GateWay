@@ -1,0 +1,218 @@
+body {
+    background: black;
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-ser;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: black;
+    background-image: url("image.hero2.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .headerlogo figure img {
+    float: center;
+    width: 250px;
+  }
+  
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  
+  
+  /*nav text*/
+  header1 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  
+  /*nav bar*/
+  nav {
+    overflow: hidden;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+   color: black;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+   nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /*responsive rules
+  @media screen and (max-width: 740px) {
+    header {
+      height: 200px;
+    }
+    header .mobile {
+      display: inline-block;
+    }
+   header .desktop {
+      display: none;
+    }
+  } */
+  
+  /*features outline/page info*/
+    
+  .features {
+    background: linear-gradient(90deg, rgba(171,51,186,1) 0%, rgba(92,53,236,0.6365896700477065) 100%, rgba(0,212,255,1) 100%);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* features text*/
+  .features figure {
+   text-align: center; 
+    margin: auto;
+    width: 300px;
+  }
+  
+  .features figure img {
+    border: 1px solid white;
+    width: 300px;
+    box-shadow: white 0 0 15px;
+    border-radius: 10px;
+  }
+  
+  
+  /*footer*/
+  .features2 figure img {
+    float: center-left;
+    width: 60px;
+  }
+   
+  footer {
+    background: white;
+    color: grey;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  /* whole contact page*/
+  
+  .contact {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background: linear-gradient(90deg, rgba(171,51,186,1) 0%, rgba(92,53,236,0.6365896700477065) 100%, rgba(0,212,255,1) 100%);  
+    }
+  
+  /*contact title/styling*/
+  .contact .content {
+    max-width: 800px;
+   text-align: center;
+  }
+  
+  .contact .content h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: black; 
+  }
+  
+  /*contact box info/styling*/
+  .contactForm {
+    width: 25%;
+    padding: 40px;
+    background: white;
+  }
+  
+  .contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /*contact box design*/
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  .contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #444;
+  }
+  
+  /*focus into box while typed/requires valid text ex-email*/
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span 
+  {
+    color: #e91e63;
+    font-size: 12px;
+    /*moves text above actual text*/
+    transform: translateY(-20px);
+  }
+  
+  /*send button*/
+  .contactForm .inputBox input[type="submit"]
+  {
+    width: 100px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  
