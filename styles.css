@@ -8,7 +8,7 @@ body {
   
   header {
     background-color: black;
-    background-image: url("image.hero2.jpg");
+    background-image: url("images/image.hero2.jpg");
     background-size: 100%;
     background-position: center;
     height: 600px;
@@ -16,9 +16,11 @@ body {
     text-align: center;
   }
   
-  .headerlogo figure img {
+  .header-title {
     float: center;
-    width: 250px;
+    font-size: 80px;
+    font-weight: 600;
+   
   }
   
   
